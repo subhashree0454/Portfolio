@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Glow effect for profile image */
+.glow {
+    position: relative;
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        box-shadow: 0 0 10px -10px rgba(155, 89, 182, 0.5);
+    }
+    to {
+        box-shadow: 0 0 20px 10px rgba(155, 89, 182, 0.5);
+    }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #9b59b6, #00ffff);
+    border-radius: 10px;
+}
+
+/* Section title underline animation */
+.section-title:after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: linear-gradient(to right, #9b59b6, #00ffff);
+    margin: 15px auto 0;
+}
+
+/* Button hover effects */
+.btn-hover-glow:hover {
+    box-shadow: 0 0 15px rgba(155, 89, 182, 0.7);
+}
+
+/* Input focus effects */
+.input-focus-glow:focus {
+    box-shadow: 0 0 0 3px rgba(155, 89, 182, 0.3);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-content {
+        text-align: center;
+    }
+
+    .profile-img {
+        margin: 0 auto;
+    }
+}
+
+/* Smooth fade-in for sections */
+section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+section.show {
+    opacity: 1;
+    transform: translateY(0);
+}
