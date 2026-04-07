@@ -1,71 +1,55 @@
-# Subhashree Sahu | Java Developer Portfolio
+# Subhashree Sahu | Java Full Stack Portfolio 2026 (Vite + React)
 
-Welcome to my professional portfolio! I am **Subhashree Sahu**, a dedicated **Java Developer** and **Full Stack Enthusiast** based in Odisha. This project showcases my technical expertise, academic journey, and featured projects using a modern, high-performance web stack.
+Welcome to the 2026 version of my professional portfolio! I am **Subhashree Sahu**, a dedicated **Java Developer** and **Full Stack Enthusiast**. This project has been migrated to a high-performance **Vite + React** stack to ensure the best possible user experience and modern development standards.
 
-## ✨ Features
+## ✨ 2026 Feature Set
 
-- **3D Interactive Background**: Implemented using **Three.js** for an immersive particle-based visual experience.
-- **Glassmorphism UI**: High-end aesthetic with frosted-glass effects and vibrant gradients.
-- **GSAP Animations**: Fluid entry animations and scroll-triggered reveals for every section.
-- **Modular Components**: Custom Web Components (`<custom-navbar>`, `<custom-footer>`) for clean and maintainable code.
-- **Responsive Design**: Fully optimized for mobile, tablet, and desktop viewing.
-- **Smooth Scrolling**: Enhanced navigation using GSAP's ScrollToPlugin.
-- **Back to Top**: Dynamic navigation helper for better UX.
+- **Vite & React Architecture**: Lightning-fast builds and smooth component management.
+- **React Three Fiber (R3F)**: Premium 3D particle landscape optimized for React hooks.
+- **Glassmorphism Design System**: Modern, sleek UI tokens using Tailwind CSS v4 logic.
+- **Framer Motion & GSAP**: High-fidelity staggered reveals and interactive layout transitions.
+- **Lucide Iconography**: Fast, lightweight, and modern iconography system.
+- **Fully Responsive**: Architected with mobile-first modern CSS strategies.
 
-## 🛠️ Technologies Used
+## 🛠️ Modern Tech Stack
 
-### Frontend
-- **HTML5 & Vanilla CSS**: Core structure and custom styling.
-- **Tailwind CSS**: Utility-first framework for rapid, responsive UI development.
-- **JavaScript (ES6+)**: Core logic and component architecture.
-- **Three.js**: 3D rendering for the interactive particle background.
-- **GSAP (GreenSock Architecture)**: Industry-standard animation library with ScrollTrigger & ScrollToPlugin.
-- **Feather Icons & Font Awesome**: High-quality vector icons.
+### Frontend Ecosystem
+- **Vite (Project Scaffolding)**
+- **React (Component Architecture)**
+- **Tailwind CSS (Utility Styling)**
+- **GSAP & Framer Motion (Animation Engine)**
+- **React Three Fiber (3D Performance)**
+- **Lucide React (Icon System)**
 
-### Backend Skills (Demonstrated in Projects)
-- **Java (Core & Advanced)**: Robust backend systems.
-- **Spring Boot**: RESTful API development and microservices.
-- **Hibernate / JPA**: Object-Relational Mapping (ORM).
-- **MySQL / SQL**: Relational database management and optimization.
+### Java Expertise
+- **Core & Advanced Java (J2EE)**
+- **Spring Boot (Cloud Microservices)**
+- **Hibernate / JPA / MySQL**
 
-## 📂 Project Structure
-
-```text
-.
-├── assets/             # Images, Project Assets, and Resume (PDF)
-├── components/         # Modular Web Components (Navbar & Footer)
-├── index.html          # Main Application Entry Point
-├── script.js           # Core Logic (Three.js, GSAP, Interactivity)
-├── style.css           # Global Styles & Animations
-└── README.MD           # Project Documentation
-```
-
-## 🚀 Getting Started
-
-To view the portfolio locally:
+## 📂 Installation & Usage
 
 1. **Clone the repository**:
    ```bash
    git clone https://github.com/subhashree0454/Portfolio.git
    ```
-2. **Navigate to the directory**:
+2. **Install dependencies**:
    ```bash
-   cd Portfolio
+   npm install
    ```
-3. **Open `index.html`**:
-   Simply open the `index.html` file in any modern web browser.
+3. **Run Development Server**:
+   ```bash
+   npm run dev
+   ```
+4. **Build for Production**:
+   ```bash
+   npm run build
+   ```
 
-## 📈 Featured Projects
+## 📬 Connectivity
 
-- **School Management System**: Full-stack Java & React dashboard.
-- **Library Management System**: Desktop-style inventory control using JDBC & Spring.
-- **Online Bookstore**: E-commerce experience with Spring Boot REST APIs.
-
-## 📬 Contact Me
-
-- **Email**: [sahusubhashree0454@gmail.com](mailto:sahusubhashree0454@gmail.com)
 - **LinkedIn**: [Subhashree Sahu](https://www.linkedin.com/in/subhashree-sahu-705026287/)
 - **GitHub**: [@subhashree0454](https://github.com/subhashree0454)
+- **Email**: [sahusubhashree0454@gmail.com](mailto:sahusubhashree0454@gmail.com)
 
 ---
-Built with ❤️ by Subhashree Sahu.
+Developed with precision for the 2026 digital landscape.
