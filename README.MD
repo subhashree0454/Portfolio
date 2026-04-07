@@ -1,136 +1,71 @@
 # Subhashree Sahu | Java Developer Portfolio
 
-Welcome to my portfolio! I’m **Subhashree Sahu**, a passionate **Java Developer** and **Full Stack Enthusiast**. This portfolio highlights my skills, projects, certifications, and showcases the technologies I work with.
+Welcome to my professional portfolio! I am **Subhashree Sahu**, a dedicated **Java Developer** and **Full Stack Enthusiast** based in Odisha. This project showcases my technical expertise, academic journey, and featured projects using a modern, high-performance web stack.
 
-## Live Demo
+## ✨ Features
 
-Check out the live demo of my portfolio:
-[Live Demo](https://your-live-demo-link.com)
+- **3D Interactive Background**: Implemented using **Three.js** for an immersive particle-based visual experience.
+- **Glassmorphism UI**: High-end aesthetic with frosted-glass effects and vibrant gradients.
+- **GSAP Animations**: Fluid entry animations and scroll-triggered reveals for every section.
+- **Modular Components**: Custom Web Components (`<custom-navbar>`, `<custom-footer>`) for clean and maintainable code.
+- **Responsive Design**: Fully optimized for mobile, tablet, and desktop viewing.
+- **Smooth Scrolling**: Enhanced navigation using GSAP's ScrollToPlugin.
+- **Back to Top**: Dynamic navigation helper for better UX.
 
-## Table of Contents
+## 🛠️ Technologies Used
 
-- [Subhashree Sahu | Java Developer Portfolio](#subhashree-sahu--java-developer-portfolio)
-  - [Live Demo](#live-demo)
-  - [Table of Contents](#table-of-contents)
-  - [Features](#features)
-  - [Technologies Used](#technologies-used)
-    - [Frontend:](#frontend)
-    - [Backend (for projects):](#backend-for-projects)
-    - [Other:](#other)
-  - [Getting Started](#getting-started)
-    - [Prerequisites](#prerequisites)
-    - [Installation](#installation)
-    - [Optional Configuration](#optional-configuration)
-  - [Project Structure](#project-structure)
-  - [License](#license)
-  - [Acknowledgments](#acknowledgments)
-  - [Contact](#contact)
-  - [Thank you for visiting my portfolio!](#thank-you-for-visiting-my-portfolio)
+### Frontend
+- **HTML5 & Vanilla CSS**: Core structure and custom styling.
+- **Tailwind CSS**: Utility-first framework for rapid, responsive UI development.
+- **JavaScript (ES6+)**: Core logic and component architecture.
+- **Three.js**: 3D rendering for the interactive particle background.
+- **GSAP (GreenSock Architecture)**: Industry-standard animation library with ScrollTrigger & ScrollToPlugin.
+- **Feather Icons & Font Awesome**: High-quality vector icons.
 
-## Features
+### Backend Skills (Demonstrated in Projects)
+- **Java (Core & Advanced)**: Robust backend systems.
+- **Spring Boot**: RESTful API development and microservices.
+- **Hibernate / JPA**: Object-Relational Mapping (ORM).
+- **MySQL / SQL**: Relational database management and optimization.
 
-- **Responsive Design**: The website adapts seamlessly across all devices.
-- **Smooth Scrolling**: Enhanced user experience with smooth scroll effects.
-- **Animations**: Subtle animations on scroll and hover for an interactive experience.
-- **Custom Components**: The site uses custom-built web components for the navbar and footer for a more modular design.
-- **Contact Form**: A functional form for users to reach out to me directly.
+## 📂 Project Structure
 
-## Technologies Used
-
-### Frontend:
-- **HTML5** & **CSS3** (Tailwind CSS for modern styling)
-- **JavaScript** (for interactive elements)
-- **Feather Icons** for high-quality, customizable icons
-- **Google Fonts** for seamless font integration
-
-### Backend (for projects):
-- **Java (Core & Advanced)** for the backend development
-- **Spring Boot** for creating RESTful APIs and backend services
-- **SQL** & **MySQL** for managing and interacting with relational databases
-- **JDBC** for Java database connectivity
-
-### Other:
-- **Git** for version control and collaboration
-
-## Getting Started
-
-Follow these steps to get a local copy of the project running on your machine.
-
-### Prerequisites
-
-Make sure you have the following installed:
-- A web browser (Chrome, Firefox, Safari, etc.)
-- Git (if you want to clone the repo)
-- (Optional for backend projects) Java Development Kit (JDK) and an IDE like IntelliJ IDEA or Eclipse.
-
-### Installation
-
-1. Clone the repository to your local machine:
-   ```sh
-   git clone https://github.com/your_username/your_project_name.git
-````
-
-2. Navigate into the project directory:
-
-   ```sh
-   cd your_project_name
-   ```
-
-3. Open `index.html` in your browser to view the portfolio.
-
-   **OR** for full-stack projects with a backend:
-
-   1. Run the backend server (Spring Boot):
-
-      * Navigate to `src/main/java/com/yourname/projectname/` and run the `Application.java` file in your IDE.
-      * The backend will start running at `http://localhost:8080/`.
-
-   2. Open `index.html` in your browser for the frontend.
-
-### Optional Configuration
-
-You can configure any settings (like API URLs, theme preferences, etc.) by editing the `config.js` file in the `src/` folder.
-
-## Project Structure
-
-Here’s a high-level overview of the project directory:
-
-```
+```text
 .
-├── components
-│   ├── footer.js       # Custom footer component
-│   └── navbar.js       # Custom navbar component
-├── src
-│   ├── assets          # Images and other assets
-│   ├── scripts         # JavaScript files
-│   └── styles          # Tailwind and custom CSS styles
-├── index.html          # Main HTML file for the portfolio
-├── README.md           # This file
-├── LICENSE             # License file
-├── config.js           # Configuration for custom settings
-└── package.json        # For managing dependencies (if using Node.js)
+├── assets/             # Images, Project Assets, and Resume (PDF)
+├── components/         # Modular Web Components (Navbar & Footer)
+├── index.html          # Main Application Entry Point
+├── script.js           # Core Logic (Three.js, GSAP, Interactivity)
+├── style.css           # Global Styles & Animations
+└── README.MD           # Project Documentation
 ```
 
-## License
+## 🚀 Getting Started
 
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
+To view the portfolio locally:
 
-## Acknowledgments
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/subhashree0454/Portfolio.git
+   ```
+2. **Navigate to the directory**:
+   ```bash
+   cd Portfolio
+   ```
+3. **Open `index.html`**:
+   Simply open the `index.html` file in any modern web browser.
 
-A big thanks to the following resources that helped make this project possible:
+## 📈 Featured Projects
 
-* **[Tailwind CSS](https://tailwindcss.com/)** for a clean and modern utility-first CSS framework.
-* **[Feather Icons](https://feathericons.com/)** for their minimalist and customizable icons.
-* **[Google Fonts](https://fonts.google.com/)** for easy-to-use font resources.
+- **School Management System**: Full-stack Java & React dashboard.
+- **Library Management System**: Desktop-style inventory control using JDBC & Spring.
+- **Online Bookstore**: E-commerce experience with Spring Boot REST APIs.
 
-## Contact
+## 📬 Contact Me
 
-If you’d like to get in touch with me, feel free to contact me through the following:
+- **Email**: [sahusubhashree0454@gmail.com](mailto:sahusubhashree0454@gmail.com)
+- **LinkedIn**: [Subhashree Sahu](https://www.linkedin.com/in/subhashree-sahu-705026287/)
+- **GitHub**: [@subhashree0454](https://github.com/subhashree0454)
 
-* **Email**: [sahusubhashree0454@gmail.com](mailto:sahusubhashree0454@gmail.com)
-* **LinkedIn**: [linkedin.com/in/yourusername](https://linkedin.com/in/yourusername)
-* **GitHub**: [github.com/your_username](https://github.com/your_username)
-
-**Project Link**: [https://github.com/your_username/your_project_name](https://github.com/your_username/your_project_name)
-
-## Thank you for visiting my portfolio!
+---
+Built with ❤️ by Subhashree Sahu.
