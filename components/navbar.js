@@ -1,9 +1,8 @@
 class CustomNavbar extends HTMLElement {
   connectedCallback() {
-    this.attachShadow({ mode: 'open' });
-    this.shadowRoot.innerHTML = `
+    this.innerHTML = `
       <style>
-        nav {
+        .custom-nav {
           background: rgba(10, 10, 10, 0.8);
           backdrop-filter: blur(10px);
           padding: 1.5rem;
@@ -33,7 +32,7 @@ class CustomNavbar extends HTMLElement {
           color: transparent;
         }
 
-        ul {
+        .nav-list {
           display: flex;
           gap: 2rem;
           list-style: none;
@@ -41,7 +40,7 @@ class CustomNavbar extends HTMLElement {
           padding: 0;
         }
 
-        a {
+        .nav-item {
           color: #d1d5db;
           text-decoration: none;
           font-weight: 500;
@@ -49,11 +48,11 @@ class CustomNavbar extends HTMLElement {
           transition: color 0.3s;
         }
 
-        a:hover {
+        .nav-item:hover {
           color: #9b59b6;
         }
 
-        a::after {
+        .nav-item::after {
           content: '';
           position: absolute;
           bottom: -5px;
@@ -64,7 +63,7 @@ class CustomNavbar extends HTMLElement {
           transition: width 0.3s;
         }
 
-        a:hover::after {
+        .nav-item:hover::after {
           width: 100%;
         }
 
@@ -77,7 +76,7 @@ class CustomNavbar extends HTMLElement {
         }
 
         @media (max-width: 768px) {
-          ul {
+          .nav-list {
             position: fixed;
             top: 80px;
             left: 0;
@@ -91,7 +90,7 @@ class CustomNavbar extends HTMLElement {
             transition: clip-path 0.5s ease-out;
           }
 
-          ul.open {
+          .nav-list.open {
             clip-path: circle(150% at 90% -10%);
           }
 
@@ -100,27 +99,28 @@ class CustomNavbar extends HTMLElement {
           }
         }
       </style>
-      <nav>
+      <nav class="custom-nav">
         <div class="logo">Subhashree <span>Sahu</span></div>
 
         <button class="mobile-menu-btn">
           <i data-feather="menu"></i>
         </button>
 
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#certifications">Certifications</a></li>
-          <li><a href="#contact">Contact</a></li>
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-item">Home</a></li>
+          <li><a href="#about" class="nav-item">About</a></li>
+          <li><a href="#skills" class="nav-item">Skills</a></li>
+          <li><a href="#education" class="nav-item">Education</a></li>
+          <li><a href="#projects" class="nav-item">Projects</a></li>
+          <li><a href="#certifications" class="nav-item">Certifications</a></li>
+          <li><a href="#contact" class="nav-item">Contact</a></li>
         </ul>
       </nav>
     `;
 
     // Initialize mobile menu
-    const menuBtn = this.shadowRoot.querySelector('.mobile-menu-btn');
-    const menu = this.shadowRoot.querySelector('ul');
+    const menuBtn = this.querySelector('.mobile-menu-btn');
+    const menu = this.querySelector('.nav-list');
 
     menuBtn.addEventListener('click', () => {
       menu.classList.toggle('open');
@@ -130,15 +130,20 @@ class CustomNavbar extends HTMLElement {
       } else {
         icon.setAttribute('data-feather', 'menu');
       }
-      feather.replace();
+      if (typeof feather !== 'undefined') {
+        feather.replace();
+      }
     });
 
     // Close menu when clicking a link
-    this.shadowRoot.querySelectorAll('a').forEach(link => {
+    this.querySelectorAll('a').forEach(link => {
       link.addEventListener('click', () => {
         menu.classList.remove('open');
-        menuBtn.querySelector('i').setAttribute('data-feather', 'menu');
-        feather.replace();
+        const icon = menuBtn.querySelector('i');
+        icon.setAttribute('data-feather', 'menu');
+        if (typeof feather !== 'undefined') {
+          feather.replace();
+        }
       });
     });
   }

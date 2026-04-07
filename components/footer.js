@@ -1,10 +1,9 @@
 class CustomFooter extends HTMLElement {
   connectedCallback() {
-    this.attachShadow({ mode: 'open' });
-    this.shadowRoot.innerHTML = `
+    this.innerHTML = `
       <style>
-        footer {
-          background: #111111;
+        .custom-footer {
+          background: #0f172a;
           color: #d1d5db;
           padding: 3rem 1.5rem;
           text-align: center;
@@ -23,7 +22,7 @@ class CustomFooter extends HTMLElement {
           margin-bottom: 1.5rem;
         }
 
-        .social-links a {
+        .social-link {
           display: inline-flex;
           align-items: center;
           justify-content: center;
@@ -35,7 +34,7 @@ class CustomFooter extends HTMLElement {
           transition: all 0.3s;
         }
 
-        .social-links a:hover {
+        .social-link:hover {
           background: #9b59b6;
           color: white;
           transform: translateY(-3px);
@@ -66,15 +65,15 @@ class CustomFooter extends HTMLElement {
           }
         }
       </style>
-      <footer>
+      <footer class="custom-footer">
         <div class="footer-content">
           <div class="social-links">
-            <a href="#" aria-label="LinkedIn"><i data-feather="linkedin"></i></a>
-            <a href="#" aria-label="GitHub"><i data-feather="github"></i></a>
-            <a href="#" aria-label="Twitter"><i data-feather="twitter"></i></a>
-            <a href="mailto:sahusubhashree0454@gmail.com" aria-label="Email"><i data-feather="mail"></i></a>
+            <a href="https://www.linkedin.com/in/subhashree-sahu-705026287/" target="_blank" class="social-link" aria-label="LinkedIn"><i data-feather="linkedin"></i></a>
+            <a href="https://github.com/subhashree0454" target="_blank" class="social-link" aria-label="GitHub"><i data-feather="github"></i></a>
+            <a href="#" class="social-link" aria-label="Twitter"><i data-feather="twitter"></i></a>
+            <a href="mailto:sahusubhashree0454@gmail.com" class="social-link" aria-label="Email"><i data-feather="mail"></i></a>
           </div>
-          <p class="copyright">© 2025 Subhashree Sahu | Designed with <span class="heart">❤️</span> in Dark Mode</p>
+          <p class="copyright">© 2025 Subhashree Sahu | Designed with <span class="heart">❤️</span> by Subhashree</p>
         </div>
       </footer>
     `;
